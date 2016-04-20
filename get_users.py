@@ -3,7 +3,7 @@ import json
 import commands
 app=Flask(__name__)
 
-@app.route("/")
+@app.route("/api/v1.0/get_users/users")
 def hello(): 
 	r=commands.getoutput('ls /home |sort')
 	b=r.split("\n")
